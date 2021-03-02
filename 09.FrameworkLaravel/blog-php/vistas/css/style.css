@@ -1,0 +1,665 @@
+/*=============================================
+ESCRITORIO (XL revisamos en 1366px en adelante)
+=============================================*/
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Chewy', cursive;*/
+}
+
+ul, ol{
+	list-style:none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style:none;
+	text-decoration: none;
+}
+
+/*=============================================
+HEADER
+=============================================*/
+
+header{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:5;
+	background: rgba(0,0,0,.5);
+}
+
+header .logotipo{
+	width:45%;
+}
+
+.redes ul li i{
+	width:35px;
+	line-height: 35px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.redes ul li i.fa-facebook-f{
+	background: #1475E0;
+}
+
+.redes ul li i.fa-instagram{
+	background: #B18768;
+}
+
+
+.redes ul li i.fa-twitter{
+	background: #00A6FF;
+}
+
+
+.redes ul li i.fa-youtube{
+	background: #F95F62;
+}
+
+
+.redes ul li i.fa-snapchat-ghost{
+	background: #FF9052;
+}
+
+.fa-bars{
+	font-size:35px;
+}
+
+.fa-search, .fa-bars{
+	color:white;
+}
+
+.redesMovil{
+	position:fixed;
+	bottom:-10px;
+	left:50%;
+	z-index:10;
+	transform: translate(-50%, 0%);
+}
+
+/*=============================================
+BANNER
+=============================================*/
+
+.fade-slider{
+	position:fixed;
+	z-index:-1;
+	top:0;
+	left:0;
+}
+
+.bannerEstatico{
+	background:rgba(0,0,0,0);
+}
+
+.textoBanner{
+	position:absolute;
+	width:50%;
+	text-align: center;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	color:white;
+}
+
+.textoBanner h1{
+	font-family: 'Chewy', cursive;
+	font-size:60px;
+}
+
+.textoBanner h5{
+	line-height:30px;
+	font-weight: 100;
+	font-size:18px;
+}
+
+/*=============================================
+MENÚ
+=============================================*/
+
+.menu{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.8);
+	overflow-x:hidden;
+	font-weight:300;
+	display:none;
+	font-size:34px;
+	line-height:70px;
+}
+
+.btnClose{
+	position:absolute;
+	top:100px;
+	right:25%;
+	color:white;
+}
+
+.menu .nav{
+	margin-top:10%;
+}
+
+/*=============================================
+GRID CATEGORIAS
+=============================================*/
+
+.grid figure{
+	position:relative;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:8px solid white;
+	border-right:8px solid white;
+	cursor:pointer;
+	transition:1s all;
+}
+
+.grid .columna1{
+	width:40%;
+}
+
+.grid .photo1{
+	height:400px;
+	background:url(../img/suramerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo2{
+	height:300px;
+	background:url(../img/africa.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo3{
+	height:300px;
+	background:url(../img/centroamerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo4{
+	height:300px;
+	background:url(../img/europa.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo5{
+	height:400px;
+	background:url(../img/norteamerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid .photo6{
+	height:200px;
+	background:url(../img/asia.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.grid figure p{
+	position:absolute;
+	left:0px;
+	bottom:-16px;
+	width:100%;
+	background:rgba(0,0,0,.7);
+	color:white;
+	font-weight: 100;
+	font-size:20px;
+}
+
+.grid figure p:hover{
+	background:rgba(255,57,190,.7);
+}
+
+/*=============================================
+BREADCRUMB
+=============================================*/
+
+.breadcrumb-item+.breadcrumb-item::before{
+	position:relative;
+	background: url(../img/separador.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: url(../img/espacio.png);
+    width:60px;
+    left:-10px;
+    line-height:50px;
+}
+.breadcrumb-item.inicio{
+	position: relative;
+	top:13px;
+}
+
+/*=============================================
+CONTENIDO
+=============================================*/
+
+.introArticulo{
+	position:relative;
+}
+
+.fecha{
+	position:absolute;
+	right:10px;
+	top:0px;
+	padding:5px 11px;
+	color:#aaa;
+	font-size:14px;
+	background: url(../img/globo.jpg);
+	background-size: cover;
+	background-position: center top;
+	height:40px;
+}
+
+.fechaArticulo{
+	padding:13px 30px;
+	color:#aaa;
+	font-size:15px;
+	background: url(../img/globo.jpg);
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:60px;
+}
+
+.page-item.active .page-link{
+	background: #FF39BE;
+	color:white;
+	border:1px solid #bbb;
+}
+
+.page-link{
+	color:#777;
+}
+
+/*=============================================
+GRIDFOOTER CATEGORIAS
+=============================================*/
+footer{
+	background:black;
+}
+
+.gridFooter figure{
+	position:relative;
+	border-top:4px solid white;
+	border-bottom:4px solid white;
+	border-left:4px solid white;
+	border-right:4px solid white;
+	cursor:pointer;
+	transition:1s all;
+}
+
+.gridFooter .columna1{
+	width:40%;
+}
+
+.gridFooter .photo1{
+	height:200px;
+	background:url(../img/suramerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter .photo2{
+	height:100px;
+	background:url(../img/africa.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter .photo3{
+	height:100px;
+	background:url(../img/centroamerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter .photo4{
+	height:100px;
+	background:url(../img/europa.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter .photo5{
+	height:200px;
+	background:url(../img/norteamerica.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter .photo6{
+	height:200px;
+	background:url(../img/asia.jpg);
+	background-size:cover;
+	background-position:left;
+}
+
+.gridFooter figure p{
+	position:absolute;
+	left:0px;
+	bottom:-16px;
+	width:100%;
+	background:rgba(0,0,0,.7);
+	color:white;
+	font-weight: 100;
+	font-size:15px;
+}
+
+.gridFooter figure p:hover{
+	background:rgba(255,57,190,.7);
+}
+
+/*=============================================
+SCROLL UP
+=============================================*/
+
+#scrollUp{
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background: url(../img/flecha.jpg);
+}
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+
+@media (max-width:1199px) and (min-width:992px){
+
+	.menu .nav{
+		margin-top:15%;
+	}
+
+	.textoBanner h1{
+		font-size:40px;
+	}
+
+	.textoBanner h5{
+		font-size:17px;
+	}
+
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+
+@media (max-width:991px) and (min-width:768px){
+
+	header .logotipo{
+		width:55%;
+	}
+
+	.btnClose{
+		right:15%;
+		top:70px;
+	}
+
+	.menu .nav{
+		margin-top:20%;
+	}
+
+	.textoBanner h1{
+		margin-top:40px;
+		font-size:30px;
+	}
+
+	.textoBanner h5{
+		font-size:16px;
+	}
+
+	.grid .photo1{
+		height:300px;
+	}
+
+	.grid .photo2{
+		height:200px;
+	}
+
+	.grid .photo3{
+		height:200px;
+	}
+
+	.grid .photo4{
+		height:200px;
+	}
+
+	.grid .photo5{
+		height:300px;
+	}
+
+	.grid figure p{	
+		font-size:18px;
+	}
+
+	.fecha{
+		top:-343px;
+	}
+
+	.fechaArticulo{
+		top: -7px;
+	    left: 15px;
+	    padding: 7px 18px;
+	    font-size: 11px;
+	    height: 40px;
+	}
+
+	.gridFooter figure{
+		border-top:2px solid white;
+		border-bottom:2px solid white;
+		border-left:2px solid white;
+		border-right:2px solid white;
+	}
+
+	.gridFooter figure p{
+		font-size:12px;
+	}
+
+	.tituloArticulo{
+		font-size:20px;
+	}
+	
+}
+
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+
+@media (max-width:767px) and (min-width:576px){
+
+	header .logotipo{
+		width:65%;
+	}
+
+	.fade-slider{
+		height:72px;
+	}
+
+	.btnClose{
+		left:15%;
+		top:50px;
+	}
+
+	.menu .nav{
+		margin-top:25%;
+	}
+
+	.grid .columna1{
+		width:50%;
+	}
+
+	.grid .photo1{
+		height:200px;
+	}
+
+	.grid .photo2{
+		height:200px;
+	}
+
+	.grid .photo3{
+		height:200px;
+	}
+
+	.grid .photo4{
+		height:200px;
+	}
+
+	.grid .photo5{
+		height:200px;
+	}
+
+	.grid figure p{	
+		font-size:16px;
+	}
+
+	.breadcrumb-item+.breadcrumb-item::before{		
+	    width:40px;
+		background-size:contain;
+	}
+
+	.breadcrumb-item{
+		font-size:13px;
+	}
+
+	.fecha{
+		top:-377px;
+	}
+
+	.fechaArticulo{
+		top: 1px;
+	    left: 15px;
+	    padding: 8px 13px;
+	    font-size: 13px;
+	    height: 40px;
+	}
+
+	.tituloArticulo{
+		font-size:20px;
+	}
+
+	.btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+		font-size:14px;
+		padding:6px;
+	}
+
+	.opiniones p{
+		font-size:14px;
+	}
+	
+}
+
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+
+@media (max-width:575px){
+
+	header .logotipo{
+		width:100%;
+	}
+
+	.fade-slider{
+		height:54px;
+	}
+
+	.btnClose{
+		left:5%;
+		top:10px;
+	}
+
+	.menu .nav{
+		margin-top:25%;
+		font-size:20px;
+		line-height:40px;
+	}
+
+	.grid .columna1{
+		width:50%;
+	}
+
+	.grid .photo1{
+		height:120px;
+	}
+
+	.grid .photo2{
+		height:120px;
+	}
+
+	.grid .photo3{
+		height:120px;
+	}
+
+	.grid .photo4{
+		height:120px;
+	}
+
+	.grid .photo5{
+		height:120px;
+	}
+
+	.grid .photo6{
+		height:120px;
+	}
+
+	.grid figure p{	
+		font-size:14px;
+	}
+
+	.breadcrumb-item+.breadcrumb-item::before{		
+	    width:40px;
+		background-size:contain;
+	}
+
+	.breadcrumb-item.inicio, .breadcrumb-item.active{
+		font-size:13px;
+	}
+
+	.fecha{
+		top:-227px;
+		font-size:12px;
+		height:35px;
+	}
+
+	.breadArticulo{
+		display:none;
+	}
+
+	.fechaArticulo{
+		margin-top: 4px;
+	    padding: 6px 9px;
+	    font-size: 10px;
+	    height: 30px;
+	}
+
+	.tituloArticulo{
+		font-size:18px;
+	}
+
+	.textoArticulo{
+		font-size:14px;
+	}
+
+	.btnCompartir .btn-group button, .btnCompartir .btn-group button span{
+		font-size:10px;
+		padding:4px;
+	}
+
+	.opiniones p{
+		font-size:12px;
+	}
+	
+}
+

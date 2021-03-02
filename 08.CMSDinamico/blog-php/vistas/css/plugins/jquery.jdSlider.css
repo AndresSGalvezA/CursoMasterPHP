@@ -1,0 +1,163 @@
+/* line 1, public/src/scss/jquery.jdSlider.scss */
+.jd-slider {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* line 8, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-inner {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+/* line 14, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-area {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* line 19, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-area:after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+/* line 25, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-area li {
+	display: none;
+	float: left;
+	width: 100%;
+}
+
+/* line 30, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-area li:first-child {
+	display: block;
+}
+
+/* line 34, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .slide-area li img {
+	display: block;
+	width: 100%;
+}
+
+/* line 41, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .prev, .jd-slider .next {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: #000;
+}
+
+/* line 47, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .hidden.prev, .jd-slider .hidden.next {
+	display: none;
+}
+
+/* line 52, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .prev {
+	left: 0;
+}
+
+/* line 57, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .next {
+	right: 0;
+}
+
+/* line 62, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller {
+	width: 100%;
+	text-align: center;
+}
+
+/* line 66, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .auto {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* line 70, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .auto i {
+	display: none;
+	color: #333;
+}
+
+/* line 76, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .auto.pause .fa-pause {
+	display: block;
+}
+
+/* line 82, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .auto.play .fa-play {
+	display: block;
+}
+
+/* line 88, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .indicate-area {
+	display: inline-block;
+}
+
+/* line 91, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .indicate-area a {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	margin: 0 5px;
+	font-size: 0;
+	color: transparent;
+	vertical-align: middle;
+}
+
+/* line 101, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .indicate-area a:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid #333;
+	border-radius: 50%;
+}
+
+/* line 113, public/src/scss/jquery.jdSlider.scss */
+.jd-slider .controller .indicate-area a.on:after {
+	background-color: #333;
+}
+
+/* line 120, public/src/scss/jquery.jdSlider.scss */
+.jd-slider a {
+	font-size: 1.5rem;
+}
+
+/* line 126, public/src/scss/jquery.jdSlider.scss */
+.jd-slider.fade-slider .slide-area li {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+/* line 134, public/src/scss/jquery.jdSlider.scss */
+.jd-slider.fade-slider .slide-area li:first-child {
+	position: static;
+	opacity: 1;
+}
+
+/* line 143, public/src/scss/jquery.jdSlider.scss */
+.jd-slider.slider--none .prev, .jd-slider.slider--none .next, .jd-slider.slider--none .controller {
+	display: none;
+}
+

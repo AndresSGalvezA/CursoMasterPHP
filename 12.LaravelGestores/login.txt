@@ -1,0 +1,2 @@
+email: admin@blog.com
+password: 12345678
